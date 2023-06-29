@@ -1,0 +1,13 @@
+#!/bin/sh
+
+BUILD_DIR=$1
+
+echo "-----> Install libdmtx"
+
+cd $BUILD_DIR
+git clone https://github.com/dmtx/libdmtx.git
+cd libdmtx
+autoreconf --install
+./configure
+make
+make install
