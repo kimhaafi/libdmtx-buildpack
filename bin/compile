@@ -9,6 +9,9 @@ cd $BUILD_DIR
 git clone https://github.com/dmtx/libdmtx.git
 cd libdmtx
 
+# Generate the configure script
+autoreconf --install
+
 # Configure the build to install to a directory within your app
 ./configure --prefix=$CACHE_DIR/libdmtx
 
