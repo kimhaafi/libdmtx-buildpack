@@ -10,10 +10,10 @@ git clone https://github.com/dmtx/libdmtx.git
 cd libdmtx
 
 # Generate the configure script
-autoreconf --install
+./autogen.sh
 
 # Configure the build to install to a directory within your app
-./configure --prefix=$CACHE_DIR/libdmtx
+./configure
 
 # Build and install the library
 make
