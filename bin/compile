@@ -13,7 +13,7 @@ cd libdmtx
 ./autogen.sh
 
 # Configure the build to install to a directory within your app
-./configure
+./configure --prefix=$CACHE_DIR/libdmtx
 
 # Build and install the library
 make
